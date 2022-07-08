@@ -1,0 +1,33 @@
+{
+  "name": "blazeconnection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node-dev --ignore-watch node_modules src/app.ts"
+  },
+  "devDependencies": {
+    "@types/config": "^0.0.41",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.3",
+    "@types/ws": "^8.5.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "dayjs": "^1.11.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "form-data": "^4.0.0",
+    "module_name": "^1.0.0",
+    "pino": "^8.1.0",
+    "socket.io": "^4.5.1",
+    "socket.io-client": "^4.5.1",
+    "ts-node": "^10.8.2",
+    "types": "^0.1.1",
+    "ws": "^8.8.0"
+  }
+}
