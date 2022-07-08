@@ -2,14 +2,17 @@ version: 0.2
 
 phases:
   pre_build:
-    - echo Install packages...
-    - npm install
+    commands:
+      - echo Install packages...
+      - npm install
   build:
-    - echo Create Build...
-    - npm run build
+    commands:
+      - echo Create Build...
+      - npm run build
   post_build:
-    - echo Removing unnecessary files...
-    - rm -rf node_modules
+    commands:
+      - echo Removing unnecessary files...
+      - rm -rf node_modules
 artifacts:
   base-directory: "."
   files:
